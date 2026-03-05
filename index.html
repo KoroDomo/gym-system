@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Gym System</h1>
+    <p>Sistema simple de gestión de gimnasio</p>
+  </header>
+
+  <nav class="nav">
+    <button onclick="mostrarModulo('miembros')">Miembros</button>
+    <button onclick="mostrarModulo('checkin')">Check-in</button>
+    <button onclick="mostrarModulo('pagos')">Pagos</button>
+  </nav>
+
+  <main class="container">
+    <!-- MÓDULO MIEMBROS -->
+    <section id="modulo-miembros" class="modulo activo">
+      <h2>Módulo de Miembros</h2>
+      <p>Registro y búsqueda de miembros.</p>
+
+      <div id="miembros-contenido">
+        <p>Este módulo será completado por el Integrante 1.</p>
+      </div>
+    </section>
+
+    <!-- MÓDULO CHECK-IN -->
+    <section id="modulo-checkin" class="modulo">
+      <h2>Módulo de Check-in</h2>
+      <p>Validación automática de membresía y registro de asistencia.</p>
+
+      <div id="checkin-contenido">
+        <p>Este módulo será completado por el Integrante 2.</p>
+      </div>
+    </section>
+
+    <!-- MÓDULO PAGOS + INVENTARIO -->
+    <section id="modulo-pagos" class="modulo">
+      <h2>Módulo de Pagos e Inventario</h2>
+      <p>Renovación de membresía, pagos, productos y ventas.</p>
+
+      <div id="pagos-contenido">
+        <p>Este módulo será completado por el Integrante 3.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/miembros.js"></script>
+  <script src="js/checkin.js"></script>
+  <script src="js/pagos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
