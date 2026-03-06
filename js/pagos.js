@@ -576,3 +576,16 @@ function obtenerFechaHoraActual() {
   const minutos = String(ahora.getMinutes()).padStart(2, "0");
   return `${fecha} ${horas}:${minutos}`;
 }
+
+/* =========================
+   Refrescador de miembros
+========================= */
+
+
+function refrescarPagos() {
+  cargarMiembrosEnSelectPago();
+  renderTablaPagos();
+  renderSelectVentaProductos();
+  renderTablaProductos();
+  renderTablaVentas(obtenerDatos("ventas"));
+}
