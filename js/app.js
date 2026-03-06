@@ -6,6 +6,10 @@ function mostrarModulo(nombreModulo) {
   if (moduloObjetivo) {
     moduloObjetivo.classList.add("activo");
   }
+
+  if (nombreModulo === "pagos" && typeof refrescarPagos === "function") {
+    refrescarPagos();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
