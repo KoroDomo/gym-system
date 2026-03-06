@@ -69,14 +69,16 @@ function registrarMiembro() {
         return;
     }
 
-    miembros.push({
+    const nuevoMiembro = {
+        id: generarId(miembros),
         nombre,
         apellido,
         cedula,
         plan,
         fechaVencimiento
-    });
+    };
 
+    miembros.push(nuevoMiembro);
     guardarMiembros();
     listarMiembros();
     alert("Miembro registrado correctamente.");
@@ -181,3 +183,5 @@ function cerrarModal() {
 }
 // Render automático cuando se carga la página
 document.addEventListener("DOMContentLoaded", renderModuloMiembros);
+
+
